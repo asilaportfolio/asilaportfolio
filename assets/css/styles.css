@@ -510,21 +510,31 @@ body {
 .contact-item {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     gap: 15px;
     margin-bottom: 20px;
+    padding: 10px 0;
+    overflow: visible;
+    width: fit-content;
 }
 
 .contact-icon {
     font-size: 1.5rem;
     color: var(--primary-color);
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     background-color: rgba(244, 114, 182, 0.1);
     flex-shrink: 0;
+    margin-right: 15px;
+    overflow: visible;
+    position: relative;
+    z-index: 1;
+    align-self: center;
+    margin: 0;
 }
 
 .contact-text {
@@ -533,6 +543,9 @@ body {
     font-size: 1.1rem;
     color: #555;
     flex: 1;
+    align-self: center;
+    justify-content: flex-start;
+    margin-left: 15px;
 }
 
 .social-icon {
